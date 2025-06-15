@@ -1,0 +1,14 @@
+# Ignore node_modules and build artifacts
+node_modules/
+dist/
+.vite/
+build/
+*.log
+.env
+.DS_Store
+node_modules/
+client/node_modules/
+dist/
+.vite/
+.env
+*.log
