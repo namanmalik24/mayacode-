@@ -50,7 +50,7 @@ export const UserProfileDrawer = ({ currentLanguage, setCurrentLanguage }) => {
     };
   }, []);  // Empty dependency array means this runs once on mount
 
-  const API_ENDPOINT = "https://test.mayacode.io/api/api";
+  const API_ENDPOINT = import.meta.env.VITE_API_URL || "http://localhost:8000/api";
 
   // --- Refactored Backend Update Function ---
   const updatePersonaOnBackend = (personaData, isAutoSave = false) => {

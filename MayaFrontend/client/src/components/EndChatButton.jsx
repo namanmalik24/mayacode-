@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-const API_ENDPOINT = "https://test.mayacode.io/api/api";
+const API_ENDPOINT = import.meta.env.VITE_API_URL || "http://localhost:8000/api";
 
 export const EndChatButton = forwardRef(({ jsonFilePath, onEndChat }, ref) => {
   const handleEndChat = async () => {

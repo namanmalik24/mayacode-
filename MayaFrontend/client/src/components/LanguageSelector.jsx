@@ -16,7 +16,7 @@ const LANGUAGES = [
   { name: "Portuguese", value: "portuguese" },
   { name: "Italian", value: "italian" }
 ];
-const API_ENDPOINT = "https://test.mayacode.io/api/api";
+const API_ENDPOINT = import.meta.env.VITE_API_URL || "http://localhost:8000/api";
 export const LanguageSelector = ({ currentLanguage, setCurrentLanguage, buttonClassName }) => {
   const [showLanguages, setShowLanguages] = useState(false);
   const dropdownRef = useRef(null);

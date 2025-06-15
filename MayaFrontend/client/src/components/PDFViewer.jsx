@@ -1,6 +1,6 @@
 import React, { useState, forwardRef } from 'react';
 
-const API_ENDPOINT = "https://test.mayacode.io/api/api";
+const API_ENDPOINT = import.meta.env.VITE_API_URL || "http://localhost:8000/api";
 
 export const PDFViewer = forwardRef(({ buttonClassName, onFetchPdf = null }, ref) => {
   const [pdfData, setPdfData] = useState(null);

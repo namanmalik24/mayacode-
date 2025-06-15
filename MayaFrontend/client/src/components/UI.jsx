@@ -37,7 +37,7 @@ export const UI = ({ hidden, jsonFilePath = "./chat_data.json", ...props }) => {
   const recommendationDrawerRef = useRef(null);
   
   // Create a reference to API endpoint
-  const API_ENDPOINT = "https://test.mayacode.io/api/api";
+  const API_ENDPOINT = import.meta.env.VITE_API_URL || "http://localhost:8000/api";
   
   // Utility to convert literal \n sequences into actual line breaks
   const normalizeContent = (raw) =>

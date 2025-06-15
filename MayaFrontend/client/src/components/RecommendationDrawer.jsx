@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, forwardRef } from "react";
-const API_ENDPOINT = "https://test.mayacode.io/api/api"
+const API_ENDPOINT = import.meta.env.VITE_API_URL || "http://localhost:8000/api";
 
 // Convert to forwardRef to accept ref from UI component
 export const RecommendationDrawer = forwardRef(({ 
