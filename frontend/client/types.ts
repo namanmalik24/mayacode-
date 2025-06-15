@@ -1,4 +1,3 @@
-
 export enum ProgressStatus {
   NotStarted = 'Not Started',
   InProgress = 'In Progress',

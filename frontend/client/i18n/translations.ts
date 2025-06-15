@@ -186,4 +186,3 @@ const T_EN = texts.en;
     }
   });
 });
-

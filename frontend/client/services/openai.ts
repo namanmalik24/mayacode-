@@ -16,4 +16,4 @@ export const createChatCompletion = async (messages: { role: string, content: st
 export const createStreamingChatCompletion = async (messages: { role: string, content: string }[]) => {
   // Note: Backend doesn't support streaming yet, so we'll use regular completion
   return createChatCompletion(messages);
-}; 
+};
